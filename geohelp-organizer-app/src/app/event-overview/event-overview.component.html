@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <div class="qrCode">
+        <qrcode [qrdata]="qrCodeString" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </div>
+    <div class="passphrase">
+        <h2>Event Name: <span>{{ eventName }}</span></h2>
+        <h2>Passphrase: <span>{{ passphrase }}</span></h2>
+        <button class="myButton" [routerLink]="['/event-monitoring']">START MONITORING</button>
+    </div>
+</div>

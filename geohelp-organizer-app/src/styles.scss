@@ -1,0 +1,66 @@
+/* Color variables */
+$color-highlight: #e056fd;
+$color-hightlight-dark: #be2edd;
+$color-background: #242424;
+$text-color: white;
+
+/* You can add global styles to this file, and also import other style files */
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  color: $text-color;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: $color-background;
+}
+
+.leaflet-top * {
+  color: $text-color !important;
+}
+
+#logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 2147483647;
+}
+
+#logo img {
+  height: 8vh;
+  width: auto;
+}
+
+/* General SCSS */
+.myButton {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-highlight;
+  border: 2px solid $color-highlight;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: $color-background;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

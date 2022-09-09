@@ -1,0 +1,13 @@
+<div leaflet style="height: 100vh;"
+     [leafletOptions]="options"
+     (leafletMapReady)="onMapReady($event)">
+
+	<div [leafletLayer]="drawnItems"></div>
+    <div *ngIf="drawEnabled" leafletDraw
+	     [leafletDrawOptions]="drawOptionsFull"
+         (leafletDrawCreated)="onDrawCreated($event)"></div>
+    <div *ngIf="!drawEnabled" leafletDraw
+	     [leafletDrawOptions]="drawOptionsEditOnly"
+         (leafletDrawDeleteStop)="onDrawDeleted($event)"></div>
+
+</div>

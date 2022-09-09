@@ -1,0 +1,12 @@
+<div class="container-wrapper">
+  <div class="eventRegForm">
+    <input type="text" placeholder="Enter Event-Name" [(ngModel)]="eventName" required>
+    <input type="datetime-local" placeholder="Enter Start-Time" [(ngModel)]="eventStart" required>
+    <input type="datetime-local" placeholder="Enter End-Time" [(ngModel)]="eventEnd" required>
+    <button class="myButton" (click)="registerEvent()">SUBMIT</button>
+  </div>
+</div>
+
+<div class="map">
+    <app-location-selector (onCreate)="mapSelect($event)"></app-location-selector>
+</div>

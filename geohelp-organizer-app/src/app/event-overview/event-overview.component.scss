@@ -1,0 +1,29 @@
+@import '../../styles.scss';
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    overflow: hidden;
+}
+
+.passphrase {
+    padding: 20px;
+}
+
+.passphrase span {
+    color: $color-highlight;
+    margin-left: 2rem;
+}
+
+.passphrase button {
+    width: 100%;
+}
+
+.qrCode img {
+    width: 7cm;
+    height: 7cm;
+}

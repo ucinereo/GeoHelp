@@ -1,0 +1,13 @@
+<div class="dashboard">
+    <div class="dashboardLeft">
+        <button class="myButton" [routerLink]="['/register-event']">Create New Event</button>
+    </div>
+    
+    <div class="dashboardRight">
+            <input type="text" placeholder="Enter Event-Name" [(ngModel)]="eventName" required>
+            <input type="password" placeholder="Enter Passphrase" [(ngModel)]="passphrase" required>
+            <button class="myButton" (click)="onLogin()">Start Monitoring</button>
+    </div>
+</div>
+
+

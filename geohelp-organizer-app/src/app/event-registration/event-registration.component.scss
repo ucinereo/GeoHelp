@@ -1,0 +1,35 @@
+.eventRegForm{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    width: 20rem;
+}
+
+.eventRegForm input, .eventRegForm textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  // box-sizing: border-box;
+}
+
+.eventRegForm button {
+  width: 100%;
+}
+
+.map {
+    box-sizing: border-box;
+    width: 65%;
+    float: right;
+}
+
+.container-wrapper {
+  height: 100vh;
+  display: flex;
+  float: left;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
