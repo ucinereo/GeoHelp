@@ -1,0 +1,3 @@
+brighter Pink: #e056fd
+darker Pink: #be2edd
+Background: #242424
